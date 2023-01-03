@@ -12,79 +12,99 @@ struct mainView: View {
     @Binding var selectedPlayers: [Player]
     @State var showingSheet = false
     @State var rowList: [Row] = []
-    
+    @State var confirm = false
     var body: some View {
         let WCount = (selectedPlayers.filter { ($0.status == "😁 Alive" && $0.role.team == Team.wolf) || $0.status == "🥸 Transformed" }).count
         let VCount = (selectedPlayers.filter { $0.role.team == Team.village && ($0.status != "🥸 Transformed" && $0.status != "☠️ Dead") }).count
-        
-        ZStack {
-            Color("Werewolf")
-                .ignoresSafeArea()
-            ScrollView {
-
-                ForEach($selectedPlayers, id :\.id) { $player in 
+        NavigationView {
+            ZStack {
+                Color("Werewolf")
+                    .ignoresSafeArea()
+                ScrollView {
+                    
+                    ForEach($selectedPlayers, id :\.id) { $player in
                         if (player.role.team == Team.wolf && player.status != "☠️ Dead") {
                             let color = Color("MyRed")
                             Row(color: color, player: $player)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(color, lineWidth: 3)
-                            )
-                            .padding(5)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .stroke(color, lineWidth: 3)
+                                )
+                                .padding(5)
                         }
                     }
-                ForEach($selectedPlayers, id  :\.id) { $player in
-                    if (player.status == "🥸 Transformed") {
-                        let color = Color("MyOrange")
-                        Row(color: color, player: $player)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(color, lineWidth: 3)
-                        )
-                        .padding(5)
+                    ForEach($selectedPlayers, id  :\.id) { $player in
+                        if (player.status == "🥸 Transformed") {
+                            let color = Color("MyOrange")
+                            Row(color: color, player: $player)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .stroke(color, lineWidth: 3)
+                                )
+                                .padding(5)
+                        }
+                    }
+                    ForEach($selectedPlayers, id  :\.id) { $player in
+                        if (player.role.team == Team.village && player.status != "🥸 Transformed" && player.status != "☠️ Dead") {
+                            let color = Color("MyGreen")
+                            Row(color: color, player: $player)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .stroke(color, lineWidth: 3)
+                                )
+                                .padding(5)
+                        }
+                    }
+                    ForEach($selectedPlayers, id  :\.id) { $player in
+                        if (player.status == "☠️ Dead") {
+                            let color = Color.gray
+                            Row(color: color, player: $player)
+                                .overlay(
+                                    RoundedRectangle(cornerRadius: 20)
+                                        .stroke(color, lineWidth: 3)
+                                )
+                                .padding(5)
+                        }
                     }
                 }
-                ForEach($selectedPlayers, id  :\.id) { $player in
-                    if (player.role.team == Team.village && player.status != "🥸 Transformed" && player.status != "☠️ Dead") {
-                        let color = Color("MyGreen")
-                        Row(color: color, player: $player)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(color, lineWidth: 3)
-                        )
-                        .padding(5)
-                    }
-                }
-                ForEach($selectedPlayers, id  :\.id) { $player in
-                    if (player.status == "☠️ Dead") {
-                        let color = Color.gray
-                        Row(color: color, player: $player)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 20)
-                                .stroke(color, lineWidth: 3)
-                        )
-                        .padding(5)
-                    }
-                }
+                .padding()
             }
-            .padding()
         }
         .navigationBarTitle("Moderator View")
         .toolbar {
-            ToolbarItem (placement: .navigationBarLeading) {
-                HStack {
-                    Spacer()
-                    Text("👩‍🌾: \(VCount)")
-                        .foregroundColor(Color("MyGreen"))
-                    Spacer()
-                    Text("🐺: \(WCount)")
-                        .foregroundColor(Color("MyRed"))
-                    Spacer()
+            ToolbarItem (placement: .principal) {
+                Text("👩‍🌾: \(VCount) 🐺: \(WCount)")
+                    .foregroundColor(.white)
+            }
+            ToolbarItem (placement: .navigationBarTrailing) {
+                if (self.confirm) {
+                    HStack {
+                        Image(systemName: "checkmark").onTapGesture(perform: {
+                            var roleList: [Role] = []
+                            for player in selectedPlayers {
+                                roleList.append(player.role)
+                            }
+                            selectedPlayers.removeAll()
+                            for role in roleList {
+                                selectedPlayers.append(Player(role: role))
+                            }
+                            self.confirm = false})
+                        .foregroundColor(.green)
+                        Image(systemName: "xmark.circle").onTapGesture(perform: {
+                            self.confirm = false})
+                        .foregroundColor(.red)
+                    }
+                    
+                } else {
+                    Text("Reset").onTapGesture(perform: {
+                        self.confirm = true
+                    })
+                    .foregroundColor(.white)
                 }
-                .font(.custom("AmericanTypewriter", size: 25))
-                Button("Reset", action: resetPlayers)
+
             }
         }
+        .font(.custom("AmericanTypewriter", size: 25))
     }
 }
 

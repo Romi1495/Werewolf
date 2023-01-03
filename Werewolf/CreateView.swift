@@ -16,6 +16,7 @@ struct Player: Identifiable, Hashable {
     var status = statuses[0]
     var id = UUID()
 }
+
 struct Role: Identifiable, Hashable {
     var name: String
     var team: Team
@@ -98,6 +99,7 @@ struct CreateView: View {
             ToolbarItem (placement: .navigation) {
                 NavigationLink (destination: mainView(selectedPlayers: $selectedPlayers)){
                     Image(systemName: "chevron.right.2")
+                        .foregroundColor(.white)
                 }
                .disabled(counter != maxPlayers)
             }
