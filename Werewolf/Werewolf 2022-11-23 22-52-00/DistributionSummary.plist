@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Werewolf.ipa</key>
+	<array>
+		<dict>
+			<key>architectures</key>
+			<array>
+				<string>arm64</string>
+			</array>
+			<key>buildNumber</key>
+			<string>1</string>
+			<key>certificate</key>
+			<dict>
+				<key>SHA1</key>
+				<string>E5DE814458B77F68B05654F8EF070E1156ABC8A2</string>
+				<key>dateExpires</key>
+				<string>11/23/23</string>
+				<key>type</key>
+				<string>Apple Development</string>
+			</dict>
+			<key>entitlements</key>
+			<dict>
+				<key>application-identifier</key>
+				<string>YYP4YL8BKD.Romi.Werewolf</string>
+				<key>com.apple.developer.team-identifier</key>
+				<string>YYP4YL8BKD</string>
+				<key>get-task-allow</key>
+				<true/>
+			</dict>
+			<key>name</key>
+			<string>Werewolf.app</string>
+			<key>profile</key>
+			<dict>
+				<key>UUID</key>
+				<string>87f883bb-b438-4cce-b6a8-6282e460f01a</string>
+				<key>dateExpires</key>
+				<string>11/23/23</string>
+				<key>name</key>
+				<string>iOS Team Provisioning Profile: Romi.Werewolf</string>
+			</dict>
+			<key>team</key>
+			<dict>
+				<key>id</key>
+				<string>YYP4YL8BKD</string>
+				<key>name</key>
+				<string>Romi Asad</string>
+			</dict>
+			<key>versionNumber</key>
+			<string>1.0</string>
+		</dict>
+	</array>
+</dict>
+</plist>

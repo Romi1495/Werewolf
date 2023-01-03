@@ -1,0 +1,132 @@
+2022-11-24 03:51:54 +0000  Initial pipeline context: <IDEDistributionProcessingPipelineContext: 0x7faa563041d0; archive(resolved)="<IDEArchive: 0x60000f6d7ba0>", distributionTask(resolved)="2", distributionDestination(resolved)="1", distributionMethod(resolved)="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team(resolved)="<IDEProvisioningDisambiguatableBasicTeam: 0x600008751b00; teamID='YYP4YL8BKD', teamName='Romi Asad', teamType='Individual', username='romibye@gmail.com', isFreeProvisioningTeam='0'>">
+	Chain (14, self inclusive):
+	<IDEDistributionProcessingPipelineContext: 0x7faa563041d0; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600008751b00; teamID='YYP4YL8BKD', teamName='Romi Asad', teamType='Individual', username='romibye@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionProcessingPipelineContext: 0x7faa6f7d47a0; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600008751b00; teamID='YYP4YL8BKD', teamName='Romi Asad', teamType='Individual', username='romibye@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7faa711bf5d0; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600008751b00; teamID='YYP4YL8BKD', teamName='Romi Asad', teamType='Individual', username='romibye@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7faa711bd940; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600008751b00; teamID='YYP4YL8BKD', teamName='Romi Asad', teamType='Individual', username='romibye@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7faa5b1709b0; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600008751b00; teamID='YYP4YL8BKD', teamName='Romi Asad', teamType='Individual', username='romibye@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7faa5b163d90; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600008751b00; teamID='YYP4YL8BKD', teamName='Romi Asad', teamType='Individual', username='romibye@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7faa6f7355e0; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600008751b00; teamID='YYP4YL8BKD', teamName='Romi Asad', teamType='Individual', username='romibye@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7faa6f92a100; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600008751b00; teamID='YYP4YL8BKD', teamName='Romi Asad', teamType='Individual', username='romibye@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7faa6f9ef1a0; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="<IDEProvisioningDisambiguatableBasicTeam: 0x600008751b00; teamID='YYP4YL8BKD', teamName='Romi Asad', teamType='Individual', username='romibye@gmail.com', isFreeProvisioningTeam='0'>">
+	<IDEDistributionContext: 0x7faa70c32580; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="(null)">
+	<IDEDistributionContext: 0x7faa6b77fde0; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="(null)">
+	<IDEDistributionContext: 0x7faa58141400; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="(null)">
+	<IDEDistributionContext: 0x7faa563b5a00; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="<IDEDistributionMethodDevelopmentSigned: 0x60000de62440>", team="(null)">
+	<IDEDistributionContext: 0x7faa55a413b0; archive = "<IDEArchive: 0x60000f6d7ba0>", distributionMethod="(null)", team="(null)">
+</IDEDistributionProcessingPipelineContext: 0x7faa563041d0>
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionCreateDestRootStep
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionCopyItemStep
+2022-11-24 03:51:54 +0000  Running /usr/bin/ditto '-V' '/Users/romiasad/Library/Developer/Xcode/Archives/2022-11-23/Werewolf 11-23-22, 10.50 PM.xcarchive/Products/Applications/Werewolf.app' '/var/folders/6g/6y86dnw10sn29cd5nrfnmps40000gn/T/XcodeDistPipeline.~~~yeXx4i/Root/Payload/Werewolf.app'
+2022-11-24 03:51:54 +0000  >>> Copying /Users/romiasad/Library/Developer/Xcode/Archives/2022-11-23/Werewolf 11-23-22, 10.50 PM.xcarchive/Products/Applications/Werewolf.app 
+2022-11-24 03:51:54 +0000  copying file ./_CodeSignature/CodeResources ... 
+2022-11-24 03:51:54 +0000  3309 bytes for ./_CodeSignature/CodeResources
+copying file ./AppIcon60x60@2x.png ... 
+2022-11-24 03:51:54 +0000  53521 bytes for ./AppIcon60x60@2x.png
+copying file ./Assets.car ... 
+2022-11-24 03:51:54 +0000  507584 bytes for ./Assets.car
+copying file ./AppIcon76x76@2x~ipad.png ... 
+2022-11-24 03:51:54 +0000  80170 bytes for ./AppIcon76x76@2x~ipad.png
+2022-11-24 03:51:54 +0000  copying file ./UltimateWerewolf.momd/VersionInfo.plist ... 
+2022-11-24 03:51:54 +0000  152 bytes for ./UltimateWerewolf.momd/VersionInfo.plist
+copying file ./UltimateWerewolf.momd/UltimateWerewolf.mom ... 
+2022-11-24 03:51:54 +0000  1309 bytes for ./UltimateWerewolf.momd/UltimateWerewolf.mom
+2022-11-24 03:51:54 +0000  copying file ./embedded.mobileprovision ... 
+2022-11-24 03:51:54 +0000  16561 bytes for ./embedded.mobileprovision
+2022-11-24 03:51:54 +0000  copying file ./Werewolf ... 
+2022-11-24 03:51:54 +0000  282560 bytes for ./Werewolf
+copying file ./Info.plist ... 
+2022-11-24 03:51:54 +0000  1561 bytes for ./Info.plist
+copying file ./PkgInfo ... 
+2022-11-24 03:51:54 +0000  8 bytes for ./PkgInfo
+2022-11-24 03:51:54 +0000  /usr/bin/ditto exited with 0
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionEmbedProfileStep
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionInfoPlistStep
+2022-11-24 03:51:54 +0000  Skipping step: IDEDistributionInfoPlistStep because it said so
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionAppThinningPlistStep
+2022-11-24 03:51:54 +0000  Skipping step: IDEDistributionAppThinningPlistStep because it said so
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionCompileBitcodeStep
+2022-11-24 03:51:54 +0000  Skipping step: IDEDistributionCompileBitcodeStep because it said so
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionCodeSlimmingStep
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionCopyBCSymbolMapsStep
+2022-11-24 03:51:54 +0000  Skipping step: IDEDistributionCopyBCSymbolMapsStep because it said so
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionSymbolsStep
+2022-11-24 03:51:54 +0000  Skipping step: IDEDistributionSymbolsStep because it said so
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionAppThinningStep
+2022-11-24 03:51:54 +0000  Skipping step: IDEDistributionAppThinningStep because it said so
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionArchThinningStep
+2022-11-24 03:51:54 +0000  Running /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo '/var/folders/6g/6y86dnw10sn29cd5nrfnmps40000gn/T/XcodeDistPipeline.~~~yeXx4i/Root/Payload/Werewolf.app/Werewolf' '-verify_arch' 'arm64e'
+2022-11-24 03:51:54 +0000  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/lipo exited with 1
+2022-11-24 03:51:54 +0000  Skipping architecture thinning for item "Werewolf" because arch "arm64e" wasn't found
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionODRStep
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionStripXattrsStep
+2022-11-24 03:51:54 +0000  Running /usr/bin/xattr '-crs' '/var/folders/6g/6y86dnw10sn29cd5nrfnmps40000gn/T/XcodeDistPipeline.~~~yeXx4i/Root/Payload/Werewolf.app'
+2022-11-24 03:51:54 +0000  /usr/bin/xattr exited with 0
+2022-11-24 03:51:54 +0000  Processing step: IDEDistributionCodesignStep
+2022-11-24 03:51:54 +0000  Entitlements for <IDEDistributionItem: 0x60000f8dc6c0; bundleID='Romi.Werewolf', path='<DVTFilePath:0x60000b414e70:'/Users/romiasad/Library/Developer/Xcode/Archives/2022-11-23/Werewolf 11-23-22, 10.50 PM.xcarchive/Products/Applications/Werewolf.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600017ff4e60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600002b96100; name='Apple Development: Romi Asad (44JHTVPW5W)', hash='E5DE814458B77F68B05654F8EF070E1156ABC8A2', serialNumber='77A737E5117968397FB05847C3E32A66', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2022-11-24 03:14:53 +0000''>', entitlements='{
+    "application-identifier" = "YYP4YL8BKD.Romi.Werewolf";
+    "com.apple.developer.team-identifier" = YYP4YL8BKD;
+    "get-task-allow" = 1;
+}', teamID='YYP4YL8BKD', identifier='Romi.Werewolf', executablePath='<DVTFilePath:0x60000b7dba30:'/Users/romiasad/Library/Developer/Xcode/Archives/2022-11-23/Werewolf 11-23-22, 10.50 PM.xcarchive/Products/Applications/Werewolf.app/Werewolf'>', hardenedRuntime='0'>'>: {
+    "application-identifier" = "YYP4YL8BKD.Romi.Werewolf";
+    "com.apple.developer.team-identifier" = YYP4YL8BKD;
+    "get-task-allow" = 1;
+}
+2022-11-24 03:51:54 +0000  Entitlements for <IDEDistributionItem: 0x60000f8dc6c0; bundleID='Romi.Werewolf', path='<DVTFilePath:0x60000b414e70:'/Users/romiasad/Library/Developer/Xcode/Archives/2022-11-23/Werewolf 11-23-22, 10.50 PM.xcarchive/Products/Applications/Werewolf.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600017ff4e60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600002b95ef0; name='Apple Development: Romi Asad (44JHTVPW5W)', hash='E5DE814458B77F68B05654F8EF070E1156ABC8A2', serialNumber='77A737E5117968397FB05847C3E32A66', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2022-11-24 03:14:53 +0000''>', entitlements='{
+    "application-identifier" = "YYP4YL8BKD.Romi.Werewolf";
+    "com.apple.developer.team-identifier" = YYP4YL8BKD;
+    "get-task-allow" = 1;
+}', teamID='YYP4YL8BKD', identifier='Romi.Werewolf', executablePath='<DVTFilePath:0x60000b7dba30:'/Users/romiasad/Library/Developer/Xcode/Archives/2022-11-23/Werewolf 11-23-22, 10.50 PM.xcarchive/Products/Applications/Werewolf.app/Werewolf'>', hardenedRuntime='0'>'> are: {
+    "application-identifier" = "YYP4YL8BKD.Romi.Werewolf";
+    "com.apple.developer.team-identifier" = YYP4YL8BKD;
+    "get-task-allow" = 1;
+}
+2022-11-24 03:51:54 +0000  Writing entitlements for <IDEDistributionItem: 0x60000f8dc6c0; bundleID='Romi.Werewolf', path='<DVTFilePath:0x60000b414e70:'/Users/romiasad/Library/Developer/Xcode/Archives/2022-11-23/Werewolf 11-23-22, 10.50 PM.xcarchive/Products/Applications/Werewolf.app'>', codeSigningInfo='<_DVTCodeSigningInformation_Path: 0x600017ff4e60; isSigned='1', isAdHocSigned='0', signingCertificate='<DVTSigningCertificate: 0x600002b92cb0; name='Apple Development: Romi Asad (44JHTVPW5W)', hash='E5DE814458B77F68B05654F8EF070E1156ABC8A2', serialNumber='77A737E5117968397FB05847C3E32A66', certificateKinds='(
+    "1.2.840.113635.100.6.1.12",
+    "1.2.840.113635.100.6.1.2"
+), issueDate='2022-11-24 03:14:53 +0000''>', entitlements='{
+    "application-identifier" = "YYP4YL8BKD.Romi.Werewolf";
+    "com.apple.developer.team-identifier" = YYP4YL8BKD;
+    "get-task-allow" = 1;
+}', teamID='YYP4YL8BKD', identifier='Romi.Werewolf', executablePath='<DVTFilePath:0x60000b7dba30:'/Users/romiasad/Library/Developer/Xcode/Archives/2022-11-23/Werewolf 11-23-22, 10.50 PM.xcarchive/Products/Applications/Werewolf.app/Werewolf'>', hardenedRuntime='0'>'> to: /var/folders/6g/6y86dnw10sn29cd5nrfnmps40000gn/T/XcodeDistPipeline.~~~yeXx4i/entitlements~~~DJPoDm
+2022-11-24 03:51:54 +0000  Running /usr/bin/codesign '-vvv' '--force' '--sign' 'E5DE814458B77F68B05654F8EF070E1156ABC8A2' '--entitlements' '/var/folders/6g/6y86dnw10sn29cd5nrfnmps40000gn/T/XcodeDistPipeline.~~~yeXx4i/entitlements~~~DJPoDm' '--generate-entitlement-der' '--preserve-metadata=identifier,flags,runtime' '/var/folders/6g/6y86dnw10sn29cd5nrfnmps40000gn/T/XcodeDistPipeline.~~~yeXx4i/Root/Payload/Werewolf.app'
+2022-11-24 03:51:55 +0000  /var/folders/6g/6y86dnw10sn29cd5nrfnmps40000gn/T/XcodeDistPipeline.~~~yeXx4i/Root/Payload/Werewolf.app: replacing existing signature
+2022-11-24 03:51:55 +0000  /var/folders/6g/6y86dnw10sn29cd5nrfnmps40000gn/T/XcodeDistPipeline.~~~yeXx4i/Root/Payload/Werewolf.app: signed app bundle with Mach-O thin (arm64) [Romi.Werewolf]
+2022-11-24 03:51:55 +0000  /usr/bin/codesign exited with 0
+2022-11-24 03:51:55 +0000  Processing step: IDEDistributionZipODRItemStep
+2022-11-24 03:51:55 +0000  Skipping step: IDEDistributionZipODRItemStep because it said so
+2022-11-24 03:51:55 +0000  Processing step: IDEDistributionCreateIPAStep
+2022-11-24 03:51:55 +0000  Running /usr/bin/ditto '-V' '-c' '-k' '--norsrc' '/var/folders/6g/6y86dnw10sn29cd5nrfnmps40000gn/T/XcodeDistPipeline.~~~yeXx4i/Root' '/var/folders/6g/6y86dnw10sn29cd5nrfnmps40000gn/T/XcodeDistPipeline.~~~yeXx4i/Packages/Werewolf.ipa'
+2022-11-24 03:51:55 +0000  >>> Copying /var/folders/6g/6y86dnw10sn29cd5nrfnmps40000gn/T/XcodeDistPipeline.~~~yeXx4i/Root 
+2022-11-24 03:51:55 +0000  copying file ./Payload/Werewolf.app/_CodeSignature/CodeResources ... 
+2022-11-24 03:51:55 +0000  3309 bytes for ./Payload/Werewolf.app/_CodeSignature/CodeResources
+copying file ./Payload/Werewolf.app/AppIcon60x60@2x.png ... 
+2022-11-24 03:51:55 +0000  53521 bytes for ./Payload/Werewolf.app/AppIcon60x60@2x.png
+copying file ./Payload/Werewolf.app/Assets.car ... 
+2022-11-24 03:51:55 +0000  507584 bytes for ./Payload/Werewolf.app/Assets.car
+copying file ./Payload/Werewolf.app/AppIcon76x76@2x~ipad.png ... 
+2022-11-24 03:51:55 +0000  80170 bytes for ./Payload/Werewolf.app/AppIcon76x76@2x~ipad.png
+2022-11-24 03:51:55 +0000  copying file ./Payload/Werewolf.app/UltimateWerewolf.momd/VersionInfo.plist ... 
+152 bytes for ./Payload/Werewolf.app/UltimateWerewolf.momd/VersionInfo.plist
+copying file ./Payload/Werewolf.app/UltimateWerewolf.momd/UltimateWerewolf.mom ... 
+2022-11-24 03:51:55 +0000  1309 bytes for ./Payload/Werewolf.app/UltimateWerewolf.momd/UltimateWerewolf.mom
+copying file ./Payload/Werewolf.app/embedded.mobileprovision ... 
+2022-11-24 03:51:55 +0000  16561 bytes for ./Payload/Werewolf.app/embedded.mobileprovision
+copying file ./Payload/Werewolf.app/Werewolf ... 
+2022-11-24 03:51:55 +0000  282560 bytes for ./Payload/Werewolf.app/Werewolf
+copying file ./Payload/Werewolf.app/Info.plist ... 
+2022-11-24 03:51:55 +0000  1561 bytes for ./Payload/Werewolf.app/Info.plist
+copying file ./Payload/Werewolf.app/PkgInfo ... 
+8 bytes for ./Payload/Werewolf.app/PkgInfo
+2022-11-24 03:51:55 +0000  /usr/bin/ditto exited with 0
+2022-11-24 03:51:55 +0000  Processing step: IDEDistributionAppStoreInformationStep
+2022-11-24 03:51:55 +0000  Skipping step: IDEDistributionAppStoreInformationStep because it said so
+2022-11-24 03:51:55 +0000  Processing step: IDEDistributionGenerateProcessedDistributionItems
+2022-11-24 03:51:55 +0000  IDEDistributionItem init <DVTFilePath:0x60000b490c40:'/var/folders/6g/6y86dnw10sn29cd5nrfnmps40000gn/T/XcodeDistPipeline.~~~yeXx4i/Root/Payload/Werewolf.app'>
+2022-11-24 03:51:55 +0000  Processing step: IDEDistributionCreateManifestStep

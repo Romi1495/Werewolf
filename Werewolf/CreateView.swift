@@ -12,7 +12,8 @@ import SwiftUI
 struct Player: Identifiable, Hashable {
     var role: Role
     
-    var status = "Alive"
+    var name = "______"
+    var status = statuses[0]
     var id = UUID()
 }
 struct Role: Identifiable, Hashable {
@@ -80,7 +81,7 @@ struct CreateView: View {
             Color("Werewolf")
                 .ignoresSafeArea()
             ScrollView {
-                ForEach(testList, id :\.self) { role in
+                ForEach(roleList, id :\.self) { role in
                     CreateRow(selectedPlayers: $selectedPlayers, counter: $counter, maxPlayers: $maxPlayers, currentWeight: $currentWeight, role: role, showingSheet: false)
                         .overlay(
                             RoundedRectangle(cornerRadius: 20)

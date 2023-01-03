@@ -53,7 +53,7 @@ struct ContentView: View {
                             Text("Name \(4 - items.count) villagers to continue")
                                 .font(.custom("AmericanTypewriter", size: 20))
                         }
-                        NavigationLink(destination: StartView(maxPlayers: items.count)) {
+                        NavigationLink(destination: StartView()) {
                             Tile(title: "Build Your Village", image: "house")
                                 .frame(width: geometry.size.height * 0.50, height: geometry.size.height * 0.30)
                                 .overlay(

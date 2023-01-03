@@ -14,8 +14,8 @@ struct mainView: View {
     @State var rowList: [Row] = []
     
     var body: some View {
-        let WCount = (selectedPlayers.filter { ($0.status == "Alive" && $0.role.team == Team.wolf) || $0.status == "Transformed" }).count
-        let VCount = (selectedPlayers.filter { $0.role.team == Team.village && ($0.status != "Transformed" && $0.status != "Dead") }).count
+        let WCount = (selectedPlayers.filter { ($0.status == "😁 Alive" && $0.role.team == Team.wolf) || $0.status == "🥸 Transformed" }).count
+        let VCount = (selectedPlayers.filter { $0.role.team == Team.village && ($0.status != "🥸 Transformed" && $0.status != "☠️ Dead") }).count
         
         ZStack {
             Color("Werewolf")
@@ -23,7 +23,7 @@ struct mainView: View {
             ScrollView {
 
                 ForEach($selectedPlayers, id :\.id) { $player in 
-                        if (player.role.team == Team.wolf && player.status != "Dead") {
+                        if (player.role.team == Team.wolf && player.status != "☠️ Dead") {
                             let color = Color("MyRed")
                             Row(color: color, player: $player)
                             .overlay(
@@ -33,62 +33,56 @@ struct mainView: View {
                             .padding(5)
                         }
                     }
-                    ForEach($selectedPlayers, id  :\.id) { $player in
-                        if (player.status == "Transformed") {
-                            let color = Color("MyOrange")
-                            Row(color: color, player: $player)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(color, lineWidth: 3)
-                            )
-                            .padding(5)
-                        }
+                ForEach($selectedPlayers, id  :\.id) { $player in
+                    if (player.status == "🥸 Transformed") {
+                        let color = Color("MyOrange")
+                        Row(color: color, player: $player)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(color, lineWidth: 3)
+                        )
+                        .padding(5)
                     }
-                    ForEach($selectedPlayers, id  :\.id) { $player in
-                        if (player.role.team == Team.village && player.status != "Transformed" && player.status != "Dead") {
-                            let color = Color("MyGreen")
-                            Row(color: color, player: $player)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(color, lineWidth: 3)
-                            )
-                            .padding(5)
-                        }
-                    }
-                    ForEach($selectedPlayers, id  :\.id) { $player in
-                        if (player.status == "Dead") {
-                            let color = Color.gray
-                            Row(color: color, player: $player)
-                            .overlay(
-                                RoundedRectangle(cornerRadius: 20)
-                                    .stroke(color, lineWidth: 3)
-                            )
-                            .padding(5)
-                        }
-                    }
-//                ForEach(rowList, id :\.id ) { row in
-//                    row
-//                    .overlay(
-//                        RoundedRectangle(cornerRadius: 20)
-//                            .stroke(row.color, lineWidth: 3)
-//                    )
-//                    .padding(5)
                 }
+                ForEach($selectedPlayers, id  :\.id) { $player in
+                    if (player.role.team == Team.village && player.status != "🥸 Transformed" && player.status != "☠️ Dead") {
+                        let color = Color("MyGreen")
+                        Row(color: color, player: $player)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(color, lineWidth: 3)
+                        )
+                        .padding(5)
+                    }
+                }
+                ForEach($selectedPlayers, id  :\.id) { $player in
+                    if (player.status == "☠️ Dead") {
+                        let color = Color.gray
+                        Row(color: color, player: $player)
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 20)
+                                .stroke(color, lineWidth: 3)
+                        )
+                        .padding(5)
+                    }
+                }
+            }
             .padding()
         }
         .navigationBarTitle("Moderator View")
         .toolbar {
-            ToolbarItem (placement: .bottomBar) {
+            ToolbarItem (placement: .navigationBarLeading) {
                 HStack {
                     Spacer()
-                    Text("Villagers: \(VCount)")
+                    Text("👩‍🌾: \(VCount)")
                         .foregroundColor(Color("MyGreen"))
                     Spacer()
-                    Text("Wolves: \(WCount)")
+                    Text("🐺: \(WCount)")
                         .foregroundColor(Color("MyRed"))
                     Spacer()
                 }
                 .font(.custom("AmericanTypewriter", size: 25))
+                Button("Reset", action: resetPlayers)
             }
         }
     }
@@ -100,8 +94,7 @@ struct Row: View {
     @State var showingSheet =  false
     @Binding var player: Player
     @State var numberOfShakes: CGFloat = 0
-    @State var person = "None"
-    @State var status = "Alive"
+    @State var status = statuses[0]
     @State var notes = ""
     
     @Environment(\.managedObjectContext) private var viewContext
@@ -130,21 +123,27 @@ struct Row: View {
                     .foregroundColor(color)
                     .frame(width: 125, alignment: .leading)
                 Spacer()
-                Picker("Name", selection: $person) {
-                    Text("______")
+                Menu {
                     ForEach(items, id :\.self) { name in
-                        Text(name.name!)
+                        Button(name.name!) {
+                            player.name = name.name!
+                        }
                     }
+                } label: {
+                    Text(player.name)
                 }
-                .pickerStyle(.menu)
                 .font(.custom("AmericanTypewriter", size: 20))
+                .frame(width: 100, alignment: .center)
                 Spacer()
-                Picker("Status", selection: $player.status) {
-                    ForEach(statuses, id :\.self) { status in
-                        Text(status)
+                Menu {
+                    ForEach(player.role.team == Team.village ? statuses : wolfStatuses, id :\.self) { status in
+                        Button(status) {
+                            player.status = status
+                        }
                     }
+                } label: {
+                    Text(player.status.prefix(1))
                 }
-                .pickerStyle(.menu)
                 Spacer()
             }
             .padding()
@@ -227,4 +226,9 @@ struct ShakeEffect: AnimatableModifier {
         content
             .offset(x: sin(shakeNumber * .pi * 2) * 10)
     }
+}
+
+func resetPlayers() {
+
+    print("HELLOOOO")
 }

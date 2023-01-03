@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D8308FAE292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8308FAC292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodeld */; };
+		D8308FAF292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8308FAC292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodeld */; };
+		D8308FB0292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D8308FAC292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodeld */; };
 		E46C9CBE277BB8DB0043112A /* Test.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46C9CBD277BB8DB0043112A /* Test.swift */; };
 		E4DFBD352779862200CFBD9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DFBD342779862200CFBD9F /* Assets.xcassets */; };
 		E4DFBD382779862200CFBD9F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4DFBD372779862200CFBD9F /* Preview Assets.xcassets */; };
@@ -20,7 +23,6 @@
 		E4DFBD66277986C000CFBD9F /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFBD65277986C000CFBD9F /* AddView.swift */; };
 		E4DFBD68277986D200CFBD9F /* CreateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFBD67277986D200CFBD9F /* CreateView.swift */; };
 		E4DFBD6A277986EE00CFBD9F /* WerewolfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4DFBD69277986EE00CFBD9F /* WerewolfApp.swift */; };
-		E4DFBD6D2779871C00CFBD9F /* UltimateWerewolf.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E4DFBD6B2779871C00CFBD9F /* UltimateWerewolf.xcdatamodeld */; };
 		E4F0AE952790C1610093B666 /* PresetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4F0AE942790C1610093B666 /* PresetView.swift */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D8308FAD292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UltimateWerewolf.xcdatamodel; sourceTree = "<group>"; };
 		E46C9CBD277BB8DB0043112A /* Test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Test.swift; sourceTree = "<group>"; };
 		E46C9CC5277BBA920043112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E46C9CC6277BBAC30043112A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -61,7 +64,6 @@
 		E4DFBD65277986C000CFBD9F /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
 		E4DFBD67277986D200CFBD9F /* CreateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateView.swift; sourceTree = "<group>"; };
 		E4DFBD69277986EE00CFBD9F /* WerewolfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WerewolfApp.swift; sourceTree = "<group>"; };
-		E4DFBD6C2779871C00CFBD9F /* UltimateWerewolf.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UltimateWerewolf.xcdatamodel; sourceTree = "<group>"; };
 		E4F0AE942790C1610093B666 /* PresetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -114,7 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				E46CAFAD2782A924000F60AC /* Info.plist */,
-				E4DFBD6B2779871C00CFBD9F /* UltimateWerewolf.xcdatamodeld */,
+				D8308FAC292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodeld */,
 				E4DFBD342779862200CFBD9F /* Assets.xcassets */,
 				E4DFBD392779862200CFBD9F /* Persistence.swift */,
 				E4DFBD362779862200CFBD9F /* Preview Content */,
@@ -292,9 +294,9 @@
 				E46C9CBE277BB8DB0043112A /* Test.swift in Sources */,
 				E4DFBD6A277986EE00CFBD9F /* WerewolfApp.swift in Sources */,
 				E4F0AE952790C1610093B666 /* PresetView.swift in Sources */,
+				D8308FAE292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodeld in Sources */,
 				E4DFBD66277986C000CFBD9F /* AddView.swift in Sources */,
 				E4DFBD602779867A00CFBD9F /* ContentView.swift in Sources */,
-				E4DFBD6D2779871C00CFBD9F /* UltimateWerewolf.xcdatamodeld in Sources */,
 				E4DFBD68277986D200CFBD9F /* CreateView.swift in Sources */,
 				E4DFBD3A2779862200CFBD9F /* Persistence.swift in Sources */,
 			);
@@ -305,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DFBD472779862200CFBD9F /* WerewolfTests.swift in Sources */,
+				D8308FAF292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4DFBD532779862200CFBD9F /* WerewolfUITestsLaunchTests.swift in Sources */,
+				D8308FB0292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodeld in Sources */,
 				E4DFBD512779862200CFBD9F /* WerewolfUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,7 +389,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = /Users/romi/Desktop/Werewolf/Werewolf/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -441,7 +445,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_FILE = /Users/romi/Desktop/Werewolf/Werewolf/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -469,7 +473,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -501,7 +505,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -526,7 +530,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = /Users/romi/Desktop/Werewolf/Werewolf/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -553,7 +557,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = /Users/romi/Desktop/Werewolf/Werewolf/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -663,14 +667,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		E4DFBD6B2779871C00CFBD9F /* UltimateWerewolf.xcdatamodeld */ = {
+		D8308FAC292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				E4DFBD6C2779871C00CFBD9F /* UltimateWerewolf.xcdatamodel */,
+				D8308FAD292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodel */,
 			);
-			currentVersion = E4DFBD6C2779871C00CFBD9F /* UltimateWerewolf.xcdatamodel */;
-			name = UltimateWerewolf.xcdatamodeld;
-			path = ../../UltimateWerewolf/UltimateWerewolf/UltimateWerewolf.xcdatamodeld;
+			currentVersion = D8308FAD292F17FE00A7BA40 /* UltimateWerewolf.xcdatamodel */;
+			path = UltimateWerewolf.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

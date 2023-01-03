@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct StartView: View {
-    @State var maxPlayers: Int
     @State var numPlayers = 6
     var body: some View {
         ZStack {
@@ -17,7 +16,7 @@ struct StartView: View {
             VStack {
                 Spacer()
                 Picker("Number", selection: $numPlayers) {
-                    ForEach(4..<maxPlayers) { num in
+                    ForEach(4..<20) { num in
                         Text("\(num)").tag(num)
                             .font(.largeTitle)
                         Spacer()
@@ -59,7 +58,7 @@ struct StartView: View {
 
 struct StartView_Previews: PreviewProvider {
     static var previews: some View {
-        StartView(maxPlayers: 10)
+        StartView()
             .previewDevice(PreviewDevice(rawValue: "Iphone 12"))
     }
 }
